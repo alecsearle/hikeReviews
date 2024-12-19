@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hiking Reviews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Hike Reviews</h1>
+      <div id="logOut" class="hidden">Log Out</div>
+    </header>
+    <div>
+    <label for="font-size-selector">Font Size:</label>
+    <select id="font-size-selector">
+      <option value="14px">Small</option>
+      <option value="16px" selected>Medium</option>
+      <option value="18px">Large</option>
+      <option value="20px">Extra Large</option>
+    </select>
+    <label>Select Color</label>
+    <input type="color" id="colorPicker" />
+    <button id="save-color-button">Save Color</button>
+    <hr />
+  </div>
+
+    <!-- Sign In -->
+    <div id="login" class="hidden">
+      <div class="log-in-page">
+        <h1>Sign In</h1>
+        <input
+          type="text"
+          id="login-email"
+          placeholder="Email"
+          class="sign-up-input"
+        />
+        <input
+          type="text"
+          id="login-password"
+          placeholder="Password"
+          class="sign-up-input"
+        />
+        <div id="login-user-button" style="cursor: pointer">Sign In</div>
+        <div id="goToCreateAccount" "cursor: pointer">Create Account</div>
+      </div>
+    </div>
+    <!-- END Sign In -->
+
+    <!-- Create Account -->
+    <div id="createAccount" class="hidden">
+      <div class="sign-up-page">
+        <h1>Create Account</h1>
+        <input
+          type="text"
+          id="signup-first-name"
+          placeholder="First Name"
+          class="sign-up-input"
+        />
+        <input
+          type="text"
+          id="signup-last-name"
+          placeholder="Last Name"
+          class="sign-up-input"
+        />
+        <input
+          type="text"
+          id="signup-email"
+          placeholder="Email"
+          class="sign-up-input"
+        />
+        <input
+          type="text"
+          id="signup-password"
+          placeholder="Password"
+          class="sign-up-input"
+        />
+        <div id="add-user-button" style="cursor: pointer">Create Account</div>
+        <div id="goToLogin" style="cursor: pointer">Sign In</div>
+      </div>
+    </div>
+    <!-- END Create Account -->
+
+    <div id="landing" class="hidden">
+      <!-- Add Review -->
+      <div id="myBtn">+ Add Reivew</div>
+      <hr />
+      <div id="addReviewContainer" class="hidden">
+        <!-- ADD INPUTS FOR ALL ITEMS -->
+        <input
+          type="text"
+          id="input-hike-name"
+          placeholder="Hike Name"
+          class="hike-name"
+        />
+        <input
+          type="text"
+          id="input-hike-location"
+          placeholder="Hike Location"
+          class="hike-location"
+        />
+        <input
+          type="number"
+          id="input-hike-miles"
+          placeholder="Miles"
+          class="hike-miles"
+        />
+        <input
+          type="number"
+          id="input-hike-rating"
+          min="0"
+          max="5"
+          placeholder="Rating (0-5)"
+          class="rating"
+        />
+        <textarea
+          name="Review"
+          id="input-hike-review"
+          placeholder="Write your review..."
+          class="hike-review"
+        ></textarea>
+        <input
+          type="text"
+          id="input-hike-picture"
+          placeholder="Image File Name"
+          class="hike-picture"
+        />
+        <div id="add-review-button" style="cursor: pointer">Add Review</div>
+      </div>
+      <!-- END Add Review -->
+
+      <!-- Edit Review -->
+      <div id="editReviewContainer" class="hidden">
+        <h2>Edit A Hike</h2>
+        <input
+          type="text"
+          id="edit-hike-name"
+          placeholder="Hike Name"
+          class="hike-name"
+        />
+        <input
+          type="text"
+          id="edit-hike-location"
+          placeholder="Hike Location"
+          class="hike-location"
+        />
+        <input
+          type="number"
+          id="edit-hike-miles"
+          placeholder="Miles"
+          class="hike-miles"
+        />
+        <input
+          type="number"
+          id="edit-hike-rating"
+          min="0"
+          max="5"
+          placeholder="Rating (0-5)"
+          class="rating"
+        />
+        <textarea
+          name="Review"
+          id="edit-hike-review"
+          placeholder="Write your review..."
+          class="hike-review"
+        ></textarea>
+        <input
+          type="text"
+          id="edit-hike-picture"
+          placeholder="Image File Name"
+          class="hike-picture"
+        />
+        <div id="save-edit-button">Save Changes</div>
+      </div>
+      <!-- END Edit Review -->
+
+      <section></section>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

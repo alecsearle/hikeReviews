@@ -1,0 +1,225 @@
+header {
+  color: #cc8b65;
+  background-color: #100c0d;
+  display: flex;
+  justify-content: space-between; /* Distribute items with space between */
+  align-items: center;
+  padding: 0 200px; /* Add padding for spacing from the edges */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Or your preferred font */
+  transition: font-size 0.3s ease-in-out; /* Smooth transition */
+}
+
+#logOut {
+  margin-left: auto; /* Push it to the right */
+  border: 1.5px solid black;
+  padding: 5px;
+  color: black;
+  background-color: #ac714f;
+  cursor: pointer;
+}
+
+body {
+  color: #cc8b65;
+  background-color: #e3dcd2;
+  font-family: "Playwrite DE Grund", sans-serif;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  min-height: 200px;
+  padding: 20px;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #cc8b65;
+  background-color: rgb(25, 66, 25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #cc8b65;
+  padding: 5px;
+  border: 2px, solid, black;
+  width: 100px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.card-hr {
+  width: 150px;
+}
+
+.thumbnail {
+  width: 250px; /* Set the desired width */
+  height: auto; /* Keep the aspect ratio */
+  border-radius: 5px; /* Optional: round corners */
+  margin-top: 10px; /* Space above the image */
+}
+
+/* MODAL CSS */
+#myBtn {
+  display: block;
+  font-size: 2.5rem;
+  margin: 20px auto;
+  padding: 10px 20px;
+  width: 75%;
+  height: 50px;
+  background-color: rgb(25, 66, 25);
+  color: cc8b65;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#myBtn:hover {
+  background-color: rgb(11, 44, 11);
+}
+
+hr {
+  width: 75%;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.hike-name {
+  width: 250px;
+}
+.rating {
+  width: 100px;
+}
+
+.hike-review {
+  width: 250px;
+}
+
+#add-review-button {
+  border: 1px solid black;
+  padding: 5px;
+}
+#add-review-button:hover {
+  background-color: #bd764d;
+}
+
+#edit-review-button {
+  border: 1px solid black;
+  padding: 5px;
+}
+#edit-review-button:hover {
+  background-color: #bd764d;
+}
+
+#addReviewContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 20px;
+  width: 75%;
+  background-color: #cc8b65;
+  color: #100c0d;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+#editReviewContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 20px;
+  width: 75%;
+  background-color: #cc8b65;
+  color: #100c0d;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#createlogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+#login-user-button,
+#add-user-button {
+  border: 1.5px solid black;
+  padding: 5px;
+  margin-bottom: 1rem;
+  color: black;
+  background-color: #ac714f;
+}
+
+#add-user-button:hover {
+  background-color: #cb8b65;
+}
+
+#login-user-button:hover {
+  background-color: #cb8b65;
+}
+
+/* SIGN UP PAGE */
+
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+}
+
+.log-in-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 30%;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+#createAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+}
+
+.sign-up-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 30%;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.sign-up-input {
+  margin-bottom: 1rem;
+}
